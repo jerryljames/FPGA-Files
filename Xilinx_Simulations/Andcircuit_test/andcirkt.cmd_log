@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/VLSI_Training_CDAC/Xilinx/Andcircuit_test/andcirkt.xst" -ofn "E:/VLSI_Training_CDAC/Xilinx/Andcircuit_test/andcirkt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 andcirkt.ngc andcirkt.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o andcirkt_map.ncd andcirkt.ngd andcirkt.pcf 
+par -w -intstyle ise -ol high -mt off andcirkt_map.ncd andcirkt.ncd andcirkt.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml andcirkt.twx andcirkt.ncd -o andcirkt.twr andcirkt.pcf 

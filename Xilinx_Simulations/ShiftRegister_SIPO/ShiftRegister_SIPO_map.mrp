@@ -1,0 +1,40 @@
+Release 14.5 Map P.58f (nt64)
+Xilinx Mapping Report File for Design 'ShiftRegister_SIPO'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o ShiftRegister_SIPO_map.ncd ShiftRegister_SIPO.ngd
+ShiftRegister_SIPO.pcf 
+Target Device  : xc6slx4
+Target Package : tqg144
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Nov 10 07:33:32 2014
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Security:9c - No 'ISE' nor 'WebPack' feature version 2013.03 was available
+for part 'xc6slx4'.
+ERROR:Map:258 - A problem was encountered attempting to get the license for this
+   architecture. 
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc6slx4' is a WebPack part.
+INFO:Security:5a - A feature for WebPack was found but is for an older version.
+INFO:Security:7a - A feature for ISE was found but is for an older version.
+INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:62 - The LM_LICENSE_FILE environment variable is set to
+'D:/ModelSim/MODEL SIM 6_5/ModelSim6_5_KeyGen/ModelSim6_5_KeyGen/LICENSE.TXT'.
+INFO:Security:68 - For more information or for assistance in obtaining 
+INFO:Security:68a - user is JERRYL, on host JERRYL-LAPTOP.

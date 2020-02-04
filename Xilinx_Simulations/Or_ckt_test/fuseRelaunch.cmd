@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/VLSI_Training_CDAC/Xilinx_Simulations/Or_ckt_test/Or_ckt_isim_beh.exe" -prj "E:/VLSI_Training_CDAC/Xilinx_Simulations/Or_ckt_test/Or_ckt_beh.prj" "work.Or_ckt" "work.glbl" 

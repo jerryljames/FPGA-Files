@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5
+# Build 247527 by xbuild on Mon Mar 25 17:15:20 MDT 2013
+# Start of session at: Fri Feb 20 13:47:53 2015
+# Process ID: 2296
+# Log file: D:/maria/marias2/fpga/1/sine/planAhead_run_1/planAhead.log
+# Journal file: D:/maria/marias2/fpga/1/sine/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/maria/marias2/fpga/1/sine/pa.fromNetlist.tcl

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\square wave\square_wave_gen\topmodule.ncd
+OUTFILE=E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\square wave\square_wave_gen\topmodule.bit
+FAMILY=Spartan3
+PART=xc3s200-5tq144
+WORKINGDIR=E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\square wave\square_wave_gen
+LICENSE=WebPack
+USER_INFO=176271483_0_0_757

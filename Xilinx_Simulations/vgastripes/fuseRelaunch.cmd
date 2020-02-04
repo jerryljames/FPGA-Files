@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Dropbox/JERRYL WORK/SEMESTER2/VERILOG Experiments/verilog lab_Tom/vga_stripes/vgastripes/vga_isim_beh.exe" -prj "E:/Dropbox/JERRYL WORK/SEMESTER2/VERILOG Experiments/verilog lab_Tom/vga_stripes/vgastripes/vga_beh.prj" "work.vga" "work.glbl" 

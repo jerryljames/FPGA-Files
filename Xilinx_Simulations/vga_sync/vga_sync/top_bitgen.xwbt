@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\maria\marias2\fpga\3vga topmodule\vga\top.ncd
+OUTFILE=D:\maria\marias2\fpga\3vga topmodule\vga\top.bit
+FAMILY=Spartan3
+PART=xc3s200-5tq144
+WORKINGDIR=D:\maria\marias2\fpga\3vga topmodule\vga
+LICENSE=WebPack
+USER_INFO=__0_0_0

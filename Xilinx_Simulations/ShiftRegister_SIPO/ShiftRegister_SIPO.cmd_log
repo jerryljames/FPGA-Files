@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "E:/Dropbox/JERRYL WORK/VERILOG/ShiftRegister_SIPO/ShiftRegister_SIPO.xst" -ofn "E:/Dropbox/JERRYL WORK/VERILOG/ShiftRegister_SIPO/ShiftRegister_SIPO.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "ShiftRegister_SIPO.ngc" ShiftRegister_SIPO.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ShiftRegister_SIPO_map.ncd ShiftRegister_SIPO.ngd ShiftRegister_SIPO.pcf 
+xst -intstyle ise -ifn "E:/Dropbox/JERRYL WORK/VERILOG/ShiftRegister_SIPO/ShiftRegister_SIPO.xst" -ofn "E:/Dropbox/JERRYL WORK/VERILOG/ShiftRegister_SIPO/ShiftRegister_SIPO.syr" 

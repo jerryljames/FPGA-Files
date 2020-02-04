@@ -1,0 +1,11 @@
+// Verilog instantiation template created from schematic E:\VLSI_Training_CDAC\Xilinx\Circuit_Test\test.sch - Tue Jun 06 15:01:22 2017
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   test UUT (
+		.XLXN_1(    ), 
+		.XLXN_2(    ), 
+		.XLXN_3(    )
+   );

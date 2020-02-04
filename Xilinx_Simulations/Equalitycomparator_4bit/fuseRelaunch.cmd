@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Kidangoor College/Xilinx/Equalitycomparator_4bit/TESTBENCH_isim_beh.exe" -prj "E:/Kidangoor College/Xilinx/Equalitycomparator_4bit/TESTBENCH_beh.prj" "work.TESTBENCH" "work.glbl" 

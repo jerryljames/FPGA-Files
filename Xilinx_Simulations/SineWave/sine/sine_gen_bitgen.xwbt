@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\maria\marias2\fpga\1\sine\sine_gen.ncd
+OUTFILE=D:\maria\marias2\fpga\1\sine\sine_gen.bit
+FAMILY=Spartan3
+PART=xc3s200-5tq144
+WORKINGDIR=D:\maria\marias2\fpga\1\sine
+LICENSE=WebPack
+USER_INFO=__0_0_0

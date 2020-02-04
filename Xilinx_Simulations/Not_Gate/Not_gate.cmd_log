@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "E:/Kidangoor College/Xilinx/Not_Gate/Not_gate.xst" -ofn "E:/Kidangoor College/Xilinx/Not_Gate/Not_gate.syr" 
+xst -intstyle ise -ifn "E:/Thalassery College/Xilinx/Not_Gate/Not_gate.xst" -ofn "E:/Thalassery College/Xilinx/Not_Gate/Not_gate.syr" 

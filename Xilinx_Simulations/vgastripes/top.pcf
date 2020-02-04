@@ -1,0 +1,29 @@
+//! **************************************************************************
+// Written by: Map P.58f on Wed Oct 28 11:49:30 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "bout<4>" LOCATE = SITE "P5" LEVEL 1;
+COMP "bout<5>" LOCATE = SITE "P2" LEVEL 1;
+COMP "rout<0>" LOCATE = SITE "P26" LEVEL 1;
+COMP "rout<1>" LOCATE = SITE "P24" LEVEL 1;
+COMP "hout" LOCATE = SITE "P27" LEVEL 1;
+COMP "gout<0>" LOCATE = SITE "P16" LEVEL 1;
+COMP "rout<2>" LOCATE = SITE "P23" LEVEL 1;
+COMP "gout<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "rout<3>" LOCATE = SITE "P22" LEVEL 1;
+COMP "gout<2>" LOCATE = SITE "P14" LEVEL 1;
+COMP "rout<4>" LOCATE = SITE "P21" LEVEL 1;
+COMP "gout<3>" LOCATE = SITE "P12" LEVEL 1;
+COMP "rout<5>" LOCATE = SITE "P17" LEVEL 1;
+COMP "gout<4>" LOCATE = SITE "P11" LEVEL 1;
+COMP "gout<5>" LOCATE = SITE "P10" LEVEL 1;
+COMP "vout" LOCATE = SITE "P29" LEVEL 1;
+COMP "clkin" LOCATE = SITE "P55" LEVEL 1;
+COMP "psave_bar" LOCATE = SITE "P34" LEVEL 1;
+COMP "bout<0>" LOCATE = SITE "P9" LEVEL 1;
+COMP "bout<1>" LOCATE = SITE "P8" LEVEL 1;
+COMP "bout<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "bout<3>" LOCATE = SITE "P6" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj vga -o E:/VLSI_Training_CDAC/Xilinx_Simulations/vgastripes/vga.tfi -lib work E:/VLSI_Training_CDAC/Xilinx_Simulations/vgastripes//vga.v -module vga -template C:/Xilinx/14.5/ISE_DS/ISE//data/tfi.tft -deleteonerror 

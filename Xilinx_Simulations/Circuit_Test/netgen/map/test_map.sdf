@@ -1,0 +1,77 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "test")
+  (DATE "Tue Jun 06 18:58:12 2017")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.58f")
+  (DIVIDER /)
+  (VOLTAGE 1.14)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE XLXN_1_IBUF)
+      (DELAY
+        (PATHPULSE (658))
+        (ABSOLUTE
+          (IOPATH I O ( 131 )( 131 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE XLXN_2_IBUF)
+      (DELAY
+        (PATHPULSE (658))
+        (ABSOLUTE
+          (IOPATH I O ( 131 )( 131 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE XLXN_3_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 21 ))
+          (IOPATH I O ( 3878 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE XLXN_1\/IFF\/IMUX)
+      (DELAY
+        (PATHPULSE (658))
+        (ABSOLUTE
+          (IOPATH I O ( 591 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE XLXN_2\/IFF\/IMUX)
+      (DELAY
+        (PATHPULSE (658))
+        (ABSOLUTE
+          (IOPATH I O ( 591 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE XLXI_1)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH ADR0 O ( 469 )( 469 ))
+          (IOPATH ADR1 O ( 469 )( 469 ))
+          (IOPATH ADR2 O ( 469 )( 469 ))
+          (IOPATH ADR3 O ( 469 )( 469 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE XLXN_3\/OUTPUT\/OFF\/OMUX)
+      (DELAY
+        (PATHPULSE (658))
+        (ABSOLUTE
+          (IOPATH I O ( 573 ))
+        )
+      )
+  )
+)

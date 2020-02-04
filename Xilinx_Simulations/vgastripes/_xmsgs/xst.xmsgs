@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\ipcore_dir\clk80.v" Line 112: Assignment to <arg fmt="%s" index="1">clkout1_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\ipcore_dir\clk80.v" Line 113: Assignment to <arg fmt="%s" index="1">clkout2_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\ipcore_dir\clk80.v" Line 114: Assignment to <arg fmt="%s" index="1">clkout3_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\ipcore_dir\clk80.v" Line 115: Assignment to <arg fmt="%s" index="1">clkout4_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\ipcore_dir\clk80.v" Line 116: Assignment to <arg fmt="%s" index="1">clkout5_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\ipcore_dir\clk80.v" Line 117: Assignment to <arg fmt="%s" index="1">locked_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\vga.v" Line 52: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\vga.v" Line 58: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\vga.v" Line 69: Assignment to <arg fmt="%s" index="1">hon</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\vga.v" Line 85: Assignment to <arg fmt="%s" index="1">von</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">g</arg>&lt;<arg fmt="%d" index="2">1</arg>:<arg fmt="%d" index="3">6</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">vga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">b</arg>&lt;<arg fmt="%d" index="2">5</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">vga</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">r_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_name</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_1&gt; &lt;r_2&gt; &lt;r_3&gt; &lt;r_4&gt; &lt;r_5&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">r_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga_name</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">r_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">r_4</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">r_3</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">r_2</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">r_1</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">r_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">vga</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">r_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;r_1&gt; &lt;r_2&gt; &lt;r_3&gt; &lt;r_4&gt; &lt;r_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">instance_name/pll_base_inst</arg> in unit <arg fmt="%s" index="2">instance_name/pll_base_inst</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+</messages>
+

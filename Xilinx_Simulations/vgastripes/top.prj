@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/clk80.v"
+verilog work "ipcore_dir/clk80/example_design/clk80_exdes.v"
+verilog work "vga.v"
+verilog work "top.v"

@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.5
+//  \   \         Application : sch2hdl
+//  /   /         Filename : halfadder.vf
+// /___/   /\     Timestamp : 03/24/2019 08:50:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/VLSI_Training_CDAC/Xilinx_Simulations/Halfadder_circuit/halfadder.vf -w E:/VLSI_Training_CDAC/Xilinx_Simulations/Halfadder_circuit/halfadder.sch
+//Design Name: halfadder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module halfadder(a, 
+                 b, 
+                 carry, 
+                 sum);
+
+    input a;
+    input b;
+   output carry;
+   output sum;
+   
+   
+   XOR2  XLXI_1 (.I0(b), 
+                .I1(a), 
+                .O(sum));
+   AND2  XLXI_2 (.I0(b), 
+                .I1(a), 
+                .O(carry));
+endmodule

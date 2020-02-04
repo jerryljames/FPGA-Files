@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.5
+//  \   \         Application : sch2hdl
+//  /   /         Filename : test.vf
+// /___/   /\     Timestamp : 06/06/2017 13:51:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.vf -w E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.sch
+//Design Name: test
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module test(XLXN_1, 
+            XLXN_2, 
+            XLXN_3);
+
+    input XLXN_1;
+    input XLXN_2;
+   output XLXN_3;
+   
+   
+   AND2  XLXI_1 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_3));
+endmodule

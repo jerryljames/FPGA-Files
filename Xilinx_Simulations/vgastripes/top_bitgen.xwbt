@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\top.ncd
+OUTFILE=E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes\top.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\Dropbox\JERRYL WORK\SEMESTER2\VERILOG Experiments\verilog lab_Tom\vga_stripes\vgastripes
+LICENSE=WebPack
+USER_INFO=176271483_0_0_757

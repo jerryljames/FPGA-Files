@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/Kidangoor College/Xilinx/Half_Adder/half_adder.xst" -ofn "E:/Kidangoor College/Xilinx/Half_Adder/half_adder.syr" 
+xst -intstyle ise -ifn "E:/Kidangoor College/Xilinx/Half_Adder/half_adder.xst" -ofn "E:/Kidangoor College/Xilinx/Half_Adder/half_adder.syr" 
+xst -intstyle ise -ifn "E:/Kidangoor College/Xilinx/Half_Adder/half_adder.xst" -ofn "E:/Kidangoor College/Xilinx/Half_Adder/half_adder.syr" 
+xst -intstyle ise -ifn "E:/VLSI_Training_CDAC/Xilinx/Half_Adder/half_adder.xst" -ofn "E:/VLSI_Training_CDAC/Xilinx/Half_Adder/half_adder.syr" 
+xst -intstyle ise -ifn "E:/VLSI_Training_CDAC/Xilinx_Simulations/Half_Adder/half_adder.xst" -ofn "E:/VLSI_Training_CDAC/Xilinx_Simulations/Half_Adder/half_adder.syr" 

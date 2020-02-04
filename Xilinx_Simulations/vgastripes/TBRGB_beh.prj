@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/clk80.v"
+verilog work "ipcore_dir/clk80/example_design/clk80_exdes.v"
+verilog work "vga.v"
+verilog work "top.v"
+verilog work "TBRGB.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/VLSI_Training_CDAC/Xilinx/Andcircuit_test/andcirkt_isim_beh.exe" -prj "E:/VLSI_Training_CDAC/Xilinx/Andcircuit_test/andcirkt_beh.prj" "work.andcirkt" "work.glbl" 

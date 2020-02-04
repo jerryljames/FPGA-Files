@@ -1,0 +1,2 @@
+# Output products list for <TEST>
+TEST_flist.txt

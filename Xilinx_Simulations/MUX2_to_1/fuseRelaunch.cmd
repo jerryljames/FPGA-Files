@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "E:/Vadakara College/Xilinx/MUX_to_1/Testbench_isim_beh.exe" -prj "E:/Vadakara College/Xilinx/MUX_to_1/Testbench_beh.prj" "work.Testbench" "work.glbl" 

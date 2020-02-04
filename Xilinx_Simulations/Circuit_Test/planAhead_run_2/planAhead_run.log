@@ -1,0 +1,73 @@
+
+****** PlanAhead v14.5 (64-bit)
+  **** Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/pa.fromNcd.tcl
+# create_project -name Circuit_Test -dir "E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/planAhead_run_3" -part xc6slx9tqg144-3
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {E:/VLSI_Training_CDAC/Xilinx/Circuit_Test} }
+# set_property target_constrs_file "test.ucf" [current_fileset -constrset]
+Adding file 'E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.ucf' to fileset 'constrs_1'
+# add_files [list {test.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx9tqg144-3
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design test.ngc ...
+WARNING:NetListWriters:298 - No output is written to test.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file test.edif ...
+ngc2edif: Total memory usage is 95152 kilobytes
+
+Parsing EDIF File [./planAhead_run_3/Circuit_Test.data/cache/test_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/Circuit_Test.data/cache/test_ngc_zx.edif]
+Loading clock regions from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.ucf]
+Finished Parsing UCF File [E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 21d081fa
+link_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 598.941 ; gain = 161.285
+# read_xdl -file "E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.ncd"
+Release 14.5 - xdl P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+   "test" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+Successfully converted design 'E:\VLSI_Training_CDAC\Xilinx\Circuit_Test\test.ncd' to 'E:\VLSI_Training_CDAC\Xilinx\Circuit_Test\test.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.ncd
+INFO: [Designutils 20-671] Placed 4 instances
+read_xdl: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 598.941 ; gain = 0.000
+# if {[catch {read_twx -name results_1 -file "E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/test.twx\": $eInfo"
+# }
+startgroup
+place_cell XLXI_1 SLICE_X10Y2/B6LUT
+endgroup
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Jun 07 12:47:12 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

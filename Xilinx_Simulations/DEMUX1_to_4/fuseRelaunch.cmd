@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/VLSI_Training_CDAC/Xilinx_Simulations/DEMUX1_to_4/Demux1_to_4_isim_beh.exe" -prj "E:/VLSI_Training_CDAC/Xilinx_Simulations/DEMUX1_to_4/Demux1_to_4_beh.prj" "work.Demux1_to_4" "work.glbl" 

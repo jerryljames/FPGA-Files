@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/VLSI_Training_CDAC/Xilinx_Simulations/Half_Adder/half_adder_isim_beh.exe" -prj "E:/VLSI_Training_CDAC/Xilinx_Simulations/Half_Adder/half_adder_beh.prj" "work.half_adder" "work.glbl" 

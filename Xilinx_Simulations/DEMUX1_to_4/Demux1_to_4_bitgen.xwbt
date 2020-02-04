@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Thalassery College\Xilinx\DEMUX1_to_4\Demux1_to_4.ncd
+OUTFILE=E:\Thalassery College\Xilinx\DEMUX1_to_4\Demux1_to_4.bit
+FAMILY=Spartan6
+PART=xc6slx4-3tqg144
+WORKINGDIR=E:\Thalassery College\Xilinx\DEMUX1_to_4
+LICENSE=WebPack
+USER_INFO=__0_0_0

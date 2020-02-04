@@ -1,0 +1,27 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.58f
+#Current Working Directory:
+#:D   E:\VLSI_Training_CDAC\Xilinx\Clock_Generator_Final
+#Date/Time:
+#:T   Wed Jun 07 12:50:09 2017
+#------------------------------
+	#Reading clock_generator.ncd...
+	#Loading device for application Rf_Device from file '6slx4.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+	#   "clock_generator" is an NCD, version 3.2, device xc6slx4, package tqg144, speed -3
+	#Design creation date: 2017.06.07.07.18.21
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'CLK'
+	#3
+unselect comp 'CLK'
+	#4
+select -k comp 'count<3>'
+	#5
+unselect comp 'count<3>'
+	#6
+select -k comp 'SEL<0>'

@@ -1,0 +1,20 @@
+ISim log file
+Running: E:\VLSI_Training_CDAC\Xilinx_Simulations\And_Gate\And_gate_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/VLSI_Training_CDAC/Xilinx_Simulations/And_Gate/And_gate_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /And_gate/A 1 -radix bin -cancel 3 ps
+# isim force add /And_gate/B 0 -radix bin -cancel 3 ps
+# run all
+# isim force add /And_gate/A 1 -radix bin
+# isim force add /And_gate/B 1 -radix bin
+# run all
+# run all
+# isim force add /And_gate/A 1 -radix bin -cancel 1 ps
+# isim force add /And_gate/B 1 -radix bin -cancel 1 ps
+# run all

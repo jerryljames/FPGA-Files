@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "E:/VLSI_Training_CDAC/Xilinx/SineWave/sine/tbb_counter_isim_beh.exe" -prj "E:/VLSI_Training_CDAC/Xilinx/SineWave/sine/tbb_counter_beh.prj" "work.tbb_counter" "work.glbl" 

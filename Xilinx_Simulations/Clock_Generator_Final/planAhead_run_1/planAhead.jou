@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Wed Jun 07 12:52:16 2017
+# Process ID: 3932
+# Log file: E:/VLSI_Training_CDAC/Xilinx/Clock_Generator_Final/planAhead_run_1/planAhead.log
+# Journal file: E:/VLSI_Training_CDAC/Xilinx/Clock_Generator_Final/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/VLSI_Training_CDAC/Xilinx/Clock_Generator_Final/pa.fromNcd.tcl

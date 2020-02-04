@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Tue May 30 08:41:06 2017
+# Process ID: 6680
+# Log file: E:/Thalassery College/Xilinx/DEMUX1_to_4/planAhead_run_1/planAhead.log
+# Journal file: E:/Thalassery College/Xilinx/DEMUX1_to_4/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {E:/Thalassery College/Xilinx/DEMUX1_to_4/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

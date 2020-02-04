@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.58f on Mon Feb 23 14:56:22 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sine<0>" LOCATE = SITE "P10" LEVEL 1;
+COMP "sine<1>" LOCATE = SITE "P8" LEVEL 1;
+COMP "sine<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "sine<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "sine<4>" LOCATE = SITE "P5" LEVEL 1;
+COMP "sine<5>" LOCATE = SITE "P4" LEVEL 1;
+COMP "sine<6>" LOCATE = SITE "P2" LEVEL 1;
+COMP "sine<7>" LOCATE = SITE "P1" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "P55" LEVEL 1;
+NET "clk_in_BUFGP/IBUFG" BEL "clk_in_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

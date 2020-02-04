@@ -1,0 +1,3 @@
+verilog work "clk1.v"
+verilog work "counter.v"
+verilog work "topmodule.v"

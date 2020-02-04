@@ -1,0 +1,16 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/VLSI_Training_CDAC/Xilinx_Simulations/DEMUX1_to_4/Demux1_to_4_isim_beh.exe -prj E:/VLSI_Training_CDAC/Xilinx_Simulations/DEMUX1_to_4/Demux1_to_4_beh.prj work.Demux1_to_4 work.glbl 
+ISim P.58f (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/VLSI_Training_CDAC/Xilinx_Simulations/DEMUX1_to_4/Demux1_to_4.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 181152 KB
+Fuse CPU Usage: 311 ms
+Compiling module Demux1_to_4
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:861 - Failed to link the design

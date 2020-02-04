@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Wed Jun 07 12:41:00 2017
+# Process ID: 1452
+# Log file: E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/planAhead_run_2/planAhead.log
+# Journal file: E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/VLSI_Training_CDAC/Xilinx/Circuit_Test/pa.fromNcd.tcl
+startgroup
+place_cell XLXI_1 SLICE_X10Y2/B6LUT
+endgroup

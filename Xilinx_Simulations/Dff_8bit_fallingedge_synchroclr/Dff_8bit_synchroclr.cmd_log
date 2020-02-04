@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Dropbox/JERRYL WORK/VERILOG/Dff_8bit_fallingedge_synchroclr/Dff_8bit_synchroclr.xst" -ofn "E:/Dropbox/JERRYL WORK/VERILOG/Dff_8bit_fallingedge_synchroclr/Dff_8bit_synchroclr.syr" 

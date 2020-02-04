@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.58f on Wed Mar 11 15:16:31 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "hout" LOCATE = SITE "P11" LEVEL 1;
+COMP "vout" LOCATE = SITE "P12" LEVEL 1;
+COMP "clkin" LOCATE = SITE "P55" LEVEL 1;
+SCHEMATIC END;
+

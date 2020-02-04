@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/maria/marias2/fpga/square_wave_gen/TB_isim_beh.exe" -prj "D:/maria/marias2/fpga/square_wave_gen/TB_beh.prj" "work.TB" "work.glbl" 

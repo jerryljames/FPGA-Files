@@ -1,0 +1,13 @@
+# test.lpc  
+#   The constraints in this file were created simply to be viewed.  
+#   If you wish to use these constraints, please copy them into your  
+#   project's constraint file. If you do not have a project constraints  
+#   file yet, please use the "Project->New Source" menu to create one.
+
+
+
+#pin2ucf - Wed Jun 07 12:34:13 2017
+#The following constraints were newly added
+NET "XLXN_1" LOC = P130;
+NET "XLXN_2" LOC = P128;
+NET "XLXN_3" LOC = P129;

@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.5
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Or_ckt.vf
+// /___/   /\     Timestamp : 03/24/2019 08:47:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/VLSI_Training_CDAC/Xilinx_Simulations/Or_ckt_test/Or_ckt.vf -w E:/VLSI_Training_CDAC/Xilinx_Simulations/Or_ckt_test/Or_ckt.sch
+//Design Name: Or_ckt
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Or_ckt(IN_1, 
+              IN_2, 
+              OUT_1);
+
+    input IN_1;
+    input IN_2;
+   output OUT_1;
+   
+   
+   AND2  XLXI_1 (.I0(IN_2), 
+                .I1(IN_1), 
+                .O(OUT_1));
+endmodule

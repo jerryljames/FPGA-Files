@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.5
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Orckt.vf
+// /___/   /\     Timestamp : 06/13/2017 10:35:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/VLSI_Training_CDAC/Xilinx/Or_circuit/Orckt.vf -w E:/VLSI_Training_CDAC/Xilinx/Or_circuit/Orckt.sch
+//Design Name: Orckt
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Orckt(input1, 
+             input2, 
+             output1);
+
+    input input1;
+    input input2;
+   output output1;
+   
+   
+   OR2  XLXI_1 (.I0(input2), 
+               .I1(input1), 
+               .O(output1));
+endmodule

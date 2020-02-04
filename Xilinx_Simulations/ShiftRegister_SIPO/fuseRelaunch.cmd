@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Dropbox/JERRYL WORK/VERILOG/ShiftRegister_SIPO/TESTBENCH_isim_beh.exe" -prj "E:/Dropbox/JERRYL WORK/VERILOG/ShiftRegister_SIPO/TESTBENCH_beh.prj" "work.TESTBENCH" "work.glbl" 

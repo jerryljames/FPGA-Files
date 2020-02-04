@@ -1,0 +1,414 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: serial_ip_serial_or_parallel_out_shift_reg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "serial_ip_serial_or_parallel_out_shift_reg.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "serial_ip_serial_or_parallel_out_shift_reg"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : serial_ip_serial_or_parallel_out_shift_reg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Dropbox\JERRYL WORK\VERILOG\Serial_In_Serial_Or_Parallel_Out_8Bit\serial_ip_serial_or_parallel_out_shift_reg.v" into library work
+Parsing module <serial_ip_serial_or_parallel_out_shift_reg>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <serial_ip_serial_or_parallel_out_shift_reg>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <serial_ip_serial_or_parallel_out_shift_reg>.
+    Related source file is "E:\Dropbox\JERRYL WORK\VERILOG\Serial_In_Serial_Or_Parallel_Out_8Bit\serial_ip_serial_or_parallel_out_shift_reg.v".
+    Found 8-bit register for signal <Qinter>.
+    Found 8-bit register for signal <Z_1_o_dff_6_OUT>.
+    Found 1-bit register for signal <OE_BAR_STCP_DFF_9>.
+    Found 7-bit register for signal <tmp<6:0>>.
+    Found 1-bit tristate buffer for signal <Q<7>> created at line 36
+    Found 1-bit tristate buffer for signal <Q<6>> created at line 36
+    Found 1-bit tristate buffer for signal <Q<5>> created at line 36
+    Found 1-bit tristate buffer for signal <Q<4>> created at line 36
+    Found 1-bit tristate buffer for signal <Q<3>> created at line 36
+    Found 1-bit tristate buffer for signal <Q<2>> created at line 36
+    Found 1-bit tristate buffer for signal <Q<1>> created at line 36
+    Found 1-bit tristate buffer for signal <Q<0>> created at line 36
+    Summary:
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <serial_ip_serial_or_parallel_out_shift_reg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 2
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <tmp_0> in Unit <serial_ip_serial_or_parallel_out_shift_reg> is equivalent to the following FF/Latch, which will be removed : <Qinter_0> 
+INFO:Xst:2261 - The FF/Latch <tmp_1> in Unit <serial_ip_serial_or_parallel_out_shift_reg> is equivalent to the following FF/Latch, which will be removed : <Qinter_1> 
+INFO:Xst:2261 - The FF/Latch <tmp_2> in Unit <serial_ip_serial_or_parallel_out_shift_reg> is equivalent to the following FF/Latch, which will be removed : <Qinter_2> 
+INFO:Xst:2261 - The FF/Latch <tmp_3> in Unit <serial_ip_serial_or_parallel_out_shift_reg> is equivalent to the following FF/Latch, which will be removed : <Qinter_3> 
+INFO:Xst:2261 - The FF/Latch <tmp_4> in Unit <serial_ip_serial_or_parallel_out_shift_reg> is equivalent to the following FF/Latch, which will be removed : <Qinter_4> 
+INFO:Xst:2261 - The FF/Latch <tmp_5> in Unit <serial_ip_serial_or_parallel_out_shift_reg> is equivalent to the following FF/Latch, which will be removed : <Qinter_5> 
+INFO:Xst:2261 - The FF/Latch <tmp_6> in Unit <serial_ip_serial_or_parallel_out_shift_reg> is equivalent to the following FF/Latch, which will be removed : <Qinter_6> 
+
+Optimizing unit <serial_ip_serial_or_parallel_out_shift_reg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block serial_ip_serial_or_parallel_out_shift_reg, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : serial_ip_serial_or_parallel_out_shift_reg.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 10
+#      INV                         : 2
+#      LUT2                        : 8
+# FlipFlops/Latches                : 17
+#      FD                          : 17
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 11
+#      IBUF                        : 3
+#      OBUFT                       : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               9  out of   4800     0%  
+ Number of Slice LUTs:                   10  out of   2400     0%  
+    Number used as Logic:                10  out of   2400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     10
+   Number with an unused Flip Flop:       1  out of     10    10%  
+   Number with an unused LUT:             0  out of     10     0%  
+   Number of fully used LUT-FF pairs:     9  out of     10    90%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    102    12%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SHCP                               | BUFGP                  | 8     |
+STCP                               | BUFGP                  | 9     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.371ns (Maximum Frequency: 729.262MHz)
+   Minimum input arrival time before clock: 2.688ns
+   Maximum output required time after clock: 4.604ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SHCP'
+  Clock period: 1.371ns (frequency: 729.262MHz)
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Delay:               1.371ns (Levels of Logic = 1)
+  Source:            tmp_0 (FF)
+  Destination:       tmp_1 (FF)
+  Source Clock:      SHCP rising
+  Destination Clock: SHCP rising
+
+  Data Path: tmp_0 to tmp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.617  tmp_0 (tmp_0)
+     LUT2:I1->O            1   0.205   0.000  Mmux_GND_1_o_tmp[6]_mux_1_OUT21 (GND_1_o_tmp[6]_mux_1_OUT<1>)
+     FD:D                      0.102          tmp_1
+    ----------------------------------------
+    Total                      1.371ns (0.754ns logic, 0.617ns route)
+                                       (55.0% logic, 45.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SHCP'
+  Total number of paths / destination ports: 9 / 8
+-------------------------------------------------------------------------
+Offset:              2.434ns (Levels of Logic = 2)
+  Source:            MR_BAR (PAD)
+  Destination:       tmp_0 (FF)
+  Destination Clock: SHCP rising
+
+  Data Path: MR_BAR to tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   0.907  MR_BAR_IBUF (MR_BAR_IBUF)
+     LUT2:I0->O            1   0.203   0.000  Mmux_GND_1_o_tmp[6]_mux_1_OUT81 (GND_1_o_tmp[6]_mux_1_OUT<7>)
+     FD:D                      0.102          Qinter_7
+    ----------------------------------------
+    Total                      2.434ns (1.527ns logic, 0.907ns route)
+                                       (62.7% logic, 37.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'STCP'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.688ns (Levels of Logic = 2)
+  Source:            OE_BAR (PAD)
+  Destination:       OE_BAR_STCP_DFF_9 (FF)
+  Destination Clock: STCP rising
+
+  Data Path: OE_BAR to OE_BAR_STCP_DFF_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  OE_BAR_IBUF (OE_BAR_IBUF)
+     INV:I->O              1   0.206   0.579  OE_BAR_STCP_DFF_9_rstpot1_INV_0 (OE_BAR_STCP_DFF_9_rstpot)
+     FD:D                      0.102          OE_BAR_STCP_DFF_9
+    ----------------------------------------
+    Total                      2.688ns (1.530ns logic, 1.158ns route)
+                                       (56.9% logic, 43.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'STCP'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              4.604ns (Levels of Logic = 2)
+  Source:            OE_BAR_STCP_DFF_9 (FF)
+  Destination:       Q<7> (PAD)
+  Source Clock:      STCP rising
+
+  Data Path: OE_BAR_STCP_DFF_9 to Q<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  OE_BAR_STCP_DFF_9 (OE_BAR_STCP_DFF_9)
+     INV:I->O              8   0.206   0.802  OE_BAR_STCP_DFF_9_inv1_INV_0 (OE_BAR_STCP_DFF_9_inv)
+     OBUFT:T->O                2.571          Q_7_OBUFT (Q<7>)
+    ----------------------------------------
+    Total                      4.604ns (3.224ns logic, 1.380ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock SHCP
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SHCP           |    1.371|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock STCP
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SHCP           |    1.165|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.82 secs
+ 
+--> 
+
+Total memory usage is 257048 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

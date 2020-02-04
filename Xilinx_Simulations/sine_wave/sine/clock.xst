@@ -1,0 +1,5 @@
+set -tmpdir "D:/maria/marias2/fpga/1/sine/xst/projnav.tmp"
+set -xsthdpdir "D:/maria/marias2/fpga/1/sine/xst"
+elaborate
+-ifn clock.prj
+-ifmt mixed

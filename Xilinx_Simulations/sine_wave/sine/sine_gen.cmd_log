@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/1/sine/sine_gen.xst" -ofn "D:/maria/marias2/fpga/1/sine/sine_gen.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/1/sine/sine_gen.xst" -ofn "D:/maria/marias2/fpga/1/sine/sine_gen.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/1/sine/sine_gen.xst" -ofn "D:/maria/marias2/fpga/1/sine/sine_gen.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/1/sine/sine_gen.xst" -ofn "D:/maria/marias2/fpga/1/sine/sine_gen.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/1/sine/sine_gen.xst" -ofn "D:/maria/marias2/fpga/1/sine/sine_gen.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/1/sine/sine_gen.xst" -ofn "D:/maria/marias2/fpga/1/sine/sine_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc a.ucf -p xc3s200-tq144-5 sine_gen.ngc sine_gen.ngd  
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/1/sine/sine_gen.xst" -ofn "D:/maria/marias2/fpga/1/sine/sine_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc a.ucf -p xc3s200-tq144-5 sine_gen.ngc sine_gen.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o sine_gen_map.ncd sine_gen.ngd sine_gen.pcf 
+par -w -intstyle ise -ol high -t 1 sine_gen_map.ncd sine_gen.ncd sine_gen.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sine_gen.twx sine_gen.ncd -o sine_gen.twr sine_gen.pcf -ucf a.ucf 
+bitgen -intstyle ise -f sine_gen.ut sine_gen.ncd 
+xst -intstyle ise -ifn "E:/Dropbox/JERRYL WORK/SEMESTER2/VERILOG Experiments/verilog lab_Tom/sine_wave/sine/sine_gen.xst" -ofn "E:/Dropbox/JERRYL WORK/SEMESTER2/VERILOG Experiments/verilog lab_Tom/sine_wave/sine/sine_gen.syr" 
+xst -intstyle ise -ifn "E:/Dropbox/JERRYL WORK/SEMESTER2/VERILOG Experiments/verilog lab_Tom/sine_wave/sine/sine_gen.xst" -ofn "E:/Dropbox/JERRYL WORK/SEMESTER2/VERILOG Experiments/verilog lab_Tom/sine_wave/sine/sine_gen.syr" 

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Vadakara College/Xilinx/MUX_to_1/mux.xst" -ofn "E:/Vadakara College/Xilinx/MUX_to_1/mux.syr" 

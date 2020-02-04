@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/maria/marias2/fpga/1/sine/tb_sin_isim_beh.exe" -prj "D:/maria/marias2/fpga/1/sine/tb_sin_beh.prj" "work.tb_sin" "work.glbl" 

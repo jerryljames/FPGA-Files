@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.5
+//  \   \         Application : sch2hdl
+//  /   /         Filename : andcirkt.vf
+// /___/   /\     Timestamp : 06/14/2017 16:36:23
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/VLSI_Training_CDAC/Xilinx/Andcircuit_test/andcirkt.vf -w E:/VLSI_Training_CDAC/Xilinx/Andcircuit_test/andcirkt.sch
+//Design Name: andcirkt
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module andcirkt(input1, 
+                input2, 
+                output1);
+
+    input input1;
+    input input2;
+   output output1;
+   
+   
+   AND2  XLXI_1 (.I0(input2), 
+                .I1(input1), 
+                .O(output1));
+endmodule

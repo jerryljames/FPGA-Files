@@ -1,0 +1,3 @@
+verilog work "vga.v"
+verilog work "clk80.v"
+verilog work "top.v"

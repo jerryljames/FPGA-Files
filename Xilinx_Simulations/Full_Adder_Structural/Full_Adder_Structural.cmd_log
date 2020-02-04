@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Kidangoor College/Xilinx/Full_Adder_Structural/Full_Adder_Structural.xst" -ofn "E:/Kidangoor College/Xilinx/Full_Adder_Structural/Full_Adder_Structural.syr" 

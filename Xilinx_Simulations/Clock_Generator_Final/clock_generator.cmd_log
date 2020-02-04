@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "E:/Dropbox/JERRYL WORK/VERILOG/Clock_Generator_Final/clock_generator.xst" -ofn "E:/Dropbox/JERRYL WORK/VERILOG/Clock_Generator_Final/clock_generator.syr" 
+xst -intstyle ise -ifn "E:/Dropbox/JERRYL WORK/VERILOG/Clock_Generator_Final/clock_generator.xst" -ofn "E:/Dropbox/JERRYL WORK/VERILOG/Clock_Generator_Final/clock_generator.syr" 
+xst -intstyle ise -ifn "E:/Kidangoor College/Xilinx/Clock_Generator_Final/clock_generator.xst" -ofn "E:/Kidangoor College/Xilinx/Clock_Generator_Final/clock_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "clock_generator.ngc" clock_generator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o clock_generator_map.ncd clock_generator.ngd clock_generator.pcf 
+par -w -intstyle ise -ol high -mt off clock_generator_map.ncd clock_generator.ncd clock_generator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml clock_generator.twx clock_generator.ncd -o clock_generator.twr clock_generator.pcf 
+xst -intstyle ise -ifn "E:/VLSI_Training_CDAC/Xilinx/Clock_Generator_Final/clock_generator.xst" -ofn "E:/VLSI_Training_CDAC/Xilinx/Clock_Generator_Final/clock_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 clock_generator.ngc clock_generator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o clock_generator_map.ncd clock_generator.ngd clock_generator.pcf 
+par -w -intstyle ise -ol high -mt off clock_generator_map.ncd clock_generator.ncd clock_generator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml clock_generator.twx clock_generator.ncd -o clock_generator.twr clock_generator.pcf 

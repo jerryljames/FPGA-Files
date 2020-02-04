@@ -1,0 +1,14 @@
+Specifying Timing Constraints in Your UCF File
+For most embedded processor designs, you need only specify the input (reference) clock period to ensure that your system meets performance requirements. In some cases, your design might contain off-chip peripherals, such as memory controllers, that have particular input and output timing requirements. The following are typical of the basic timing constraints you must provide in your UCF file:
+Syntax: Net <clock_port> PERIOD = <value>;
+Example: Net sys_clk_pin PERIOD = 20000 ps;
+
+
+Specifying Pin Constraints for External Ports
+You must often provide a Location (LOC) constraint to define the FPGA pin location for each external port. To view the list of the external ports, do the following:
+ In the XPS Main Window, click the System Assembly View tab to show the System Assembly window.
+ Click the Ports tab.
+What to Expect
+LOC constraints take the following form:
+Syntax: NET <port_name> LOC=<pin_number>;
+Example: NET RS232_RX_pin LOC=U4;

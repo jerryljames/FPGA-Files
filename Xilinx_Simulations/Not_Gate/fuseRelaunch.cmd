@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/Kidangoor College/Xilinx/Not_Gate/Not_gate_isim_beh.exe" -prj "E:/Kidangoor College/Xilinx/Not_Gate/Not_gate_beh.prj" "work.Not_gate" "work.glbl" 

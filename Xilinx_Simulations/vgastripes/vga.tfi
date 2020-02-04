@@ -1,0 +1,14 @@
+
+
+
+// Instantiate the module
+vga instance_name (
+    .clk(clk), 
+    .hsync(hsync), 
+    .vsync(vsync), 
+    .r(r), 
+    .g(g), 
+    .b(b)
+    );
+
+

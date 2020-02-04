@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Dropbox/JERRYL WORK/VERILOG/Equalitycomparator_4bit/Equalitycomparator_4bit.xst" -ofn "E:/Dropbox/JERRYL WORK/VERILOG/Equalitycomparator_4bit/Equalitycomparator_4bit.syr" 
