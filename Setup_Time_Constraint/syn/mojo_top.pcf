@@ -1,0 +1,82 @@
+//! **************************************************************************
+// Written by: Map P.58f on Wed Jun 14 15:16:44 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "c<13>" LOCATE = SITE "P105" LEVEL 1;
+COMP "c<21>" LOCATE = SITE "P8" LEVEL 1;
+COMP "c<14>" LOCATE = SITE "P101" LEVEL 1;
+COMP "c<22>" LOCATE = SITE "P5" LEVEL 1;
+COMP "c<30>" LOCATE = SITE "P24" LEVEL 1;
+COMP "c<15>" LOCATE = SITE "P102" LEVEL 1;
+COMP "c<23>" LOCATE = SITE "P6" LEVEL 1;
+COMP "c<31>" LOCATE = SITE "P23" LEVEL 1;
+COMP "c<16>" LOCATE = SITE "P11" LEVEL 1;
+COMP "c<24>" LOCATE = SITE "P15" LEVEL 1;
+COMP "c<17>" LOCATE = SITE "P12" LEVEL 1;
+COMP "c<25>" LOCATE = SITE "P14" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "P134" LEVEL 1;
+COMP "c<18>" LOCATE = SITE "P9" LEVEL 1;
+COMP "c<26>" LOCATE = SITE "P17" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "P133" LEVEL 1;
+COMP "c<19>" LOCATE = SITE "P10" LEVEL 1;
+COMP "c<27>" LOCATE = SITE "P16" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "P132" LEVEL 1;
+COMP "clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "c<28>" LOCATE = SITE "P22" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "P131" LEVEL 1;
+COMP "c<29>" LOCATE = SITE "P21" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "P127" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "P126" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "P124" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "P123" LEVEL 1;
+COMP "a<0>" LOCATE = SITE "P143" LEVEL 1;
+COMP "a<1>" LOCATE = SITE "P144" LEVEL 1;
+COMP "a<2>" LOCATE = SITE "P1" LEVEL 1;
+COMP "a<3>" LOCATE = SITE "P2" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "P29" LEVEL 1;
+COMP "a<4>" LOCATE = SITE "P51" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "P30" LEVEL 1;
+COMP "a<5>" LOCATE = SITE "P50" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "P38" LEVEL 1;
+COMP "b<2>" LOCATE = SITE "P26" LEVEL 1;
+COMP "a<6>" LOCATE = SITE "P41" LEVEL 1;
+COMP "b<3>" LOCATE = SITE "P27" LEVEL 1;
+COMP "a<7>" LOCATE = SITE "P40" LEVEL 1;
+COMP "c<0>" LOCATE = SITE "P58" LEVEL 1;
+COMP "b<4>" LOCATE = SITE "P35" LEVEL 1;
+COMP "c<1>" LOCATE = SITE "P57" LEVEL 1;
+COMP "b<5>" LOCATE = SITE "P34" LEVEL 1;
+COMP "c<2>" LOCATE = SITE "P67" LEVEL 1;
+COMP "b<6>" LOCATE = SITE "P33" LEVEL 1;
+COMP "c<3>" LOCATE = SITE "P66" LEVEL 1;
+COMP "b<7>" LOCATE = SITE "P32" LEVEL 1;
+COMP "c<4>" LOCATE = SITE "P75" LEVEL 1;
+COMP "c<5>" LOCATE = SITE "P74" LEVEL 1;
+COMP "c<6>" LOCATE = SITE "P79" LEVEL 1;
+COMP "c<7>" LOCATE = SITE "P78" LEVEL 1;
+COMP "c<8>" LOCATE = SITE "P114" LEVEL 1;
+COMP "c<10>" LOCATE = SITE "P111" LEVEL 1;
+COMP "c<9>" LOCATE = SITE "P115" LEVEL 1;
+COMP "c<11>" LOCATE = SITE "P112" LEVEL 1;
+COMP "c<12>" LOCATE = SITE "P104" LEVEL 1;
+COMP "c<20>" LOCATE = SITE "P7" LEVEL 1;
+PIN slow_multiply/Mmult_c_d_pins<92> = BEL "slow_multiply/Mmult_c_d" PINNAME
+        CLK;
+PIN slow_multiply/Mmult_n0024_pins<92> = BEL "slow_multiply/Mmult_n0024"
+        PINNAME CLK;
+PIN slow_multiply/Mmult_n0022_pins<92> = BEL "slow_multiply/Mmult_n0022"
+        PINNAME CLK;
+PIN slow_multiply/Mmult_b_q[7]_b_q[7]_MuLt_4_OUT_pins<92> = BEL
+        "slow_multiply/Mmult_b_q[7]_b_q[7]_MuLt_4_OUT" PINNAME CLK;
+PIN slow_multiply/Mmult_a_q[7]_a_q[7]_MuLt_1_OUT_pins<92> = BEL
+        "slow_multiply/Mmult_a_q[7]_a_q[7]_MuLt_1_OUT" PINNAME CLK;
+TIMEGRP clk = PIN "slow_multiply/Mmult_c_d_pins<92>" PIN
+        "slow_multiply/Mmult_n0024_pins<92>" PIN
+        "slow_multiply/Mmult_n0022_pins<92>" PIN
+        "slow_multiply/Mmult_b_q[7]_b_q[7]_MuLt_4_OUT_pins<92>" PIN
+        "slow_multiply/Mmult_a_q[7]_a_q[7]_MuLt_1_OUT_pins<92>" BEL
+        "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

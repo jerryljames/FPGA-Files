@@ -1,0 +1,49 @@
+INFO:sim:172 - Generating IP...
+Resolving generics for 'clock_generator'...
+Applying external generics to 'clock_generator'...
+Delivering associated files for 'clock_generator'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for
+   Verilog synthesis
+Delivering EJava files for 'clock_generator'...
+Delivered 3 files into directory
+E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator
+Delivered 1 file into directory
+E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6slx9.nph' in environment
+C:\Xilinx\14.5\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'clock_generator'...
+Generating ISE project...
+XCO file found: clock_generator.xco
+XMDF file found: clock_generator_xmdf.tcl
+Adding
+E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator/example_des
+ign/clock_generator_exdes.ucf -view all -origin_type created
+Adding
+E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator/example_des
+ign/clock_generator_exdes.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator/example
+   _design/clock_generator_exdes.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator.asy
+-view all -origin_type imported
+Adding E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator.v
+-view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator.v" into
+   library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding E:/VLSI_Training_CDAC/Mojo-Timing/ipcore_dir/tmp/_cg/clock_generator.veo
+-view all -origin_type imported
+WARNING:coreutil - WARNING: This core does not have a top level called
+   "/clock_generator"
+   WARNING: Top level has been set to "/clock_generator_exdes"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'clock_generator'.
