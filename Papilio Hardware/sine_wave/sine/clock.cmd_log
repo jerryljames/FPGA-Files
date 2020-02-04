@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj sine -o D:/maria/marias2/fpga/1/sine/clock.tfi -lib work D:/maria/marias2/fpga/1/sine//clock.v -module clock -template C:/Xilinx/14.5/ISE_DS/ISE//data/tfi.tft -deleteonerror 

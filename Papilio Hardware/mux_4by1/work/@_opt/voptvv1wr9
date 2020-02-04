@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Xilinx\mux_4by1
+T_opt
+Z1 Vd_4@cafOOGJJSnTE1nn4]1
+Z2 04 3 14 work mux mux_behavioral 1
+Z3 =1-74e543f25007-51dfe8dd-2cf-1f54
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.5b;42
+Emux
+Z7 w1373628567
+Z8 DPx22 C:\modeltech_6.5b\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+Z9 8main.vhd
+Z10 Fmain.vhd
+l0
+L32
+Z11 VMG>mSQhaGmQU>fz_NE0SG3
+Z12 OE;C;6.5b;42
+Z13 o-explicit -93
+Z14 tExplicit 1
+Z15 !s100 14`iMfZQ_hf3QlDVM1:Gz1
+Amux_behavioral
+R8
+DEx23 E:\Xilinx\mux_4by1\work 3 mux 0 22 MG>mSQhaGmQU>fz_NE0SG3
+31
+Mx1 22 C:\modeltech_6.5b\ieee 14 std_logic_1164
+l41
+L39
+Z16 VE2=XOcYO89VoD9lQR995C0
+R12
+R13
+R14
+Z17 !s100 MVP6GEDiTPHK;AalE=B^m3

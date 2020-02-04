@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/lut.v"
+verilog work "clock.v"
+verilog work "sine_gen.v"

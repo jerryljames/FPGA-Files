@@ -1,0 +1,33 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/maria/marias2/fpga/square_wave_gen/TB_isim_beh.exe -prj D:/maria/marias2/fpga/square_wave_gen/TB_beh.prj work.TB work.glbl 
+ISim P.58f (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/maria/marias2/fpga/square_wave_gen/clk1.v" into library work
+Analyzing Verilog file "D:/maria/marias2/fpga/square_wave_gen/counter.v" into library work
+Analyzing Verilog file "D:/maria/marias2/fpga/square_wave_gen/topmodule.v" into library work
+Analyzing Verilog file "D:/maria/marias2/fpga/square_wave_gen/TB.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/maria/marias2/fpga/square_wave_gen/topmodule.v" Line 27: Port CLKIN_IBUFG_OUT is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 106340 KB
+Fuse CPU Usage: 249 ms
+Compiling module BUFG
+Compiling module IBUFG
+Compiling module dcm_clock_divide_by_2
+Compiling module dcm_maximum_period_check(clock_n...
+Compiling module dcm_maximum_period_check(clock_n...
+Compiling module dcm_clock_lost
+Compiling module DCM(CLKFX_DIVIDE=6,CLKFX_MULTIPL...
+Compiling module clk1
+Compiling module counter
+Compiling module topmodule
+Compiling module TB
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable D:/maria/marias2/fpga/square_wave_gen/TB_isim_beh.exe
+Fuse Memory Usage: 113616 KB
+Fuse CPU Usage: 358 ms

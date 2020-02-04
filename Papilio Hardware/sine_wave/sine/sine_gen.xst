@@ -1,0 +1,5 @@
+set -tmpdir "E:/Xilinx/sine_wave/sine/xst/projnav.tmp"
+set -xsthdpdir "E:/Xilinx/sine_wave/sine/xst"
+elaborate
+-ifn sine_gen.prj
+-ifmt mixed

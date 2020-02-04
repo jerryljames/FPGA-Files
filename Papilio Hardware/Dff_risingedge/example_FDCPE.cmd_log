@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/Xilinx/Dff_risingedge/example_FDCPE.xst" -ofn "E:/Xilinx/Dff_risingedge/example_FDCPE.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Dff_risingedge/example_FDCPE.xst" -ofn "E:/Xilinx/Dff_risingedge/example_FDCPE.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Dff_risingedge/example_FDCPE.xst" -ofn "E:/Xilinx/Dff_risingedge/example_FDCPE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-4 example_FDCPE.ngc example_FDCPE.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o example_FDCPE_map.ncd example_FDCPE.ngd example_FDCPE.pcf 
+par -w -intstyle ise -ol high -t 1 example_FDCPE_map.ncd example_FDCPE.ncd example_FDCPE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml example_FDCPE.twx example_FDCPE.ncd -o example_FDCPE.twr example_FDCPE.pcf 
+bitgen -intstyle ise -f example_FDCPE.ut example_FDCPE.ncd 

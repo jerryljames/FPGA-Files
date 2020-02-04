@@ -1,0 +1,6 @@
+V3 3
+FL E:/Xilinx/Dff_risingedge/main.vhd 2013/07/09.13:19:25 O.61xd
+EN work/example_FDCPE 1373356176 FL E:/Xilinx/Dff_risingedge/main.vhd \
+      PB ieee/std_logic_1164 1308643377
+AR work/example_FDCPE/Behavioral 1373356177 \
+      FL E:/Xilinx/Dff_risingedge/main.vhd EN work/example_FDCPE 1373356176

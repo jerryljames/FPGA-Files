@@ -1,0 +1,5 @@
+V3 3
+FL E:/Xilinx/Clock/Clk/clk.vhd 2013/07/17.15:47:32 O.61xd
+EN work/digi_clk 0 FL E:/Xilinx/Clock/Clk/clk.vhd PB ieee/std_logic_1164 1308643377
+AR work/digi_clk/Behavioral 0 \
+      FL E:/Xilinx/Clock/Clk/clk.vhd EN work/digi_clk 0

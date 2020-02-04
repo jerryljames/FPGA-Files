@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+top instance_name (
+    .clkin(clkin), 
+    .hout(hout), 
+    .vout(vout)
+    );
+
+

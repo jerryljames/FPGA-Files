@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map O.61xd on Tue Jul 09 18:37:01 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+PROHIBIT = SITE "P99";
+PROHIBIT = SITE "P43";
+PROHIBIT = SITE "P42";
+PROHIBIT = SITE "P39";
+PROHIBIT = SITE "P49";
+PROHIBIT = SITE "P48";
+PROHIBIT = SITE "P47";
+COMP "ctrl<0>" LOCATE = SITE "P35" LEVEL 1;
+COMP "ctrl<1>" LOCATE = SITE "P40" LEVEL 1;
+COMP "z" LOCATE = SITE "P53" LEVEL 1;
+COMP "a" LOCATE = SITE "P18" LEVEL 1;
+COMP "b" LOCATE = SITE "P23" LEVEL 1;
+COMP "c" LOCATE = SITE "P26" LEVEL 1;
+COMP "d" LOCATE = SITE "P33" LEVEL 1;
+SCHEMATIC END;
+

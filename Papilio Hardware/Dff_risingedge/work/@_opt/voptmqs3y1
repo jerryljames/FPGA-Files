@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Xilinx\Dff_risingedge
+T_opt
+Z1 V<<Hoj7Ej^>[7m1aM44dde1
+Z2 04 13 10 work example_fdcpe behavioral 1
+Z3 =1-16e543f25007-51dbc119-271-10f4
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.5b;42
+Eexample_fdcpe
+Z7 w1373356165
+Z8 DPx22 C:\modeltech_6.5b\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+Z9 8main.vhd
+Z10 Fmain.vhd
+l0
+L7
+Z11 VK[d=JGlCJH3LT^W:AFFWI2
+Z12 OE;C;6.5b;42
+Z13 o-explicit -93
+Z14 tExplicit 1
+Z15 !s100 SfDUe0MO=a4HgcBUA:X^R3
+Abehavioral
+R8
+DEx29 E:\Xilinx\Dff_risingedge\work 13 example_fdcpe 0 22 K[d=JGlCJH3LT^W:AFFWI2
+31
+Mx1 22 C:\modeltech_6.5b\ieee 14 std_logic_1164
+l21
+L19
+Z16 VfiS:EU<59:]fzO@6F<gBl1
+R12
+R13
+R14
+Z17 !s100 O?SfDP83PDYV[z;ecna3>0

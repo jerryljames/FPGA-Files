@@ -1,0 +1,3 @@
+NET "clkin" LOC = P55;
+NET "hout" LOC = P11;
+NET "vout" LOC = P12;

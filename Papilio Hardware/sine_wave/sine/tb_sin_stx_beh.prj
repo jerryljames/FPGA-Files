@@ -1,0 +1,4 @@
+verilog isim_temp "clock.v"
+verilog isim_temp "sine_gen.v"
+verilog isim_temp "tb_sin.v"
+verilog isim_temp "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

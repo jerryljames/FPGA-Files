@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/3vga topmodule/vga/top.xst" -ofn "D:/maria/marias2/fpga/3vga topmodule/vga/top.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/3vga topmodule/vga/top.xst" -ofn "D:/maria/marias2/fpga/3vga topmodule/vga/top.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/3vga topmodule/vga/top.xst" -ofn "D:/maria/marias2/fpga/3vga topmodule/vga/top.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/3vga topmodule/vga/top.xst" -ofn "D:/maria/marias2/fpga/3vga topmodule/vga/top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc3s200-tq144-5 "top.ngc" top.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/3vga topmodule/vga/top.xst" -ofn "D:/maria/marias2/fpga/3vga topmodule/vga/top.syr" 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/3vga topmodule/vga/top.xst" -ofn "D:/maria/marias2/fpga/3vga topmodule/vga/top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc3s200-tq144-5 "top.ngc" top.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/3vga topmodule/vga/top.xst" -ofn "D:/maria/marias2/fpga/3vga topmodule/vga/top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc3s200-tq144-5 "top.ngc" top.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/maria/marias2/fpga/3vga topmodule/vga/top.xst" -ofn "D:/maria/marias2/fpga/3vga topmodule/vga/top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc3s200-tq144-5 "top.ngc" top.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+netgen -intstyle ise -s 5  -pcf top.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim top.ncd top_timesim.v 
+xst -intstyle ise -ifn "E:/Xilinx/vga_sync/vga_sync/top.xst" -ofn "E:/Xilinx/vga_sync/vga_sync/top.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/vga_sync/vga_sync/top.xst" -ofn "E:/Xilinx/vga_sync/vga_sync/top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BPC3003-Papilio_One-general.ucf -p xc3s500e-vq100-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf BPC3003-Papilio_One-general.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+vhdtdtfi -lang verilog -prj vga -o E:/Xilinx/vga_sync/vga_sync/top.tfi -lib work E:/Xilinx/vga_sync/vga_sync//top.v -module top -template C:/Xilinx/14.5/ISE_DS/ISE//data/tfi.tft -deleteonerror 

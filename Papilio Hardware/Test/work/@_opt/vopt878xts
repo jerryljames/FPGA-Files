@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Xilinx\Test
+T_opt
+Z1 VezWXfnkc::fZ6mf@A7[dO3
+Z2 04 4 10 work new1 behavioral 1
+Z3 =1-74e543f25007-51d140e1-2e0-1ee0
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.5b;42
+Enew1
+Z7 w1372667519
+Z8 DPx22 C:\modeltech_6.5b\ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z9 DPx22 C:\modeltech_6.5b\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+Z10 8new.vhd
+Z11 Fnew.vhd
+l0
+L32
+Z12 VWk0HQ^S04ZRz4P^:]Lm8S1
+Z13 OE;C;6.5b;42
+Z14 o-explicit -93
+Z15 tExplicit 1
+Z16 !s100 m`^:63<a0AZBZkYgA8R@Q2
+Abehavioral
+R8
+R9
+DEx19 E:\Xilinx\Test\work 4 new1 0 22 Wk0HQ^S04ZRz4P^:]Lm8S1
+31
+Mx2 22 C:\modeltech_6.5b\ieee 14 std_logic_1164
+Mx1 22 C:\modeltech_6.5b\ieee 11 numeric_std
+l39
+L37
+Z17 V0kgFaDdLHS7D9o:obAT2S1
+R13
+R14
+R15
+Z18 !s100 HfE`5FZJK0oajOf8@>9:=2

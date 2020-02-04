@@ -1,0 +1,5 @@
+V3 3
+FL E:/Xilinx/mux_4by1/main.vhd 2013/07/12.16:59:27 O.61xd
+EN work/mux 1373628571 FL E:/Xilinx/mux_4by1/main.vhd PB ieee/std_logic_1164 1308643377
+AR work/mux/mux_Behavioral 1373628572 \
+      FL E:/Xilinx/mux_4by1/main.vhd EN work/mux 1373628571

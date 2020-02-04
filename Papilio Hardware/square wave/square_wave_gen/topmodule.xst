@@ -1,0 +1,5 @@
+set -tmpdir "E:/Xilinx/square wave/square_wave_gen/xst/projnav.tmp"
+set -xsthdpdir "E:/Xilinx/square wave/square_wave_gen/xst"
+elaborate
+-ifn topmodule.prj
+-ifmt mixed

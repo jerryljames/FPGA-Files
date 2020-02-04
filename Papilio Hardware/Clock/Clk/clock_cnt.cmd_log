@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Xilinx/Clock/Clk/clock_cnt.xst" -ofn "E:/Xilinx/Clock/Clk/clock_cnt.syr" 

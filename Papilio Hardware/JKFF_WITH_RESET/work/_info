@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Xilinx\JKFF_WITH_RESET
+T_opt
+V;P5_cm8FlKo]T@[0]hVi=3
+04 5 10 work jkff3 behavioral 1
+=1-74e543f25007-51def95f-47-1ab8
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OE;O;6.5b;42
+Ejkff3
+Z1 w1373567289
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z3 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z5 8JK.vhd
+Z6 FJK.vhd
+l0
+L13
+V=]5UnKdL1EiUHT6za;BbV3
+!s100 J?3QP0ODF814R5X:`kj=N2
+Z7 OE;C;6.5b;42
+31
+Z8 o-explicit -93
+Z9 tExplicit 1
+Abehavioral
+R2
+R3
+R4
+Z10 DEx4 work 5 jkff3 0 22 =]5UnKdL1EiUHT6za;BbV3
+l26
+L23
+Z11 VP6>heN1RbOE9aW2nCC4GJ0
+Z12 !s100 KPL@YUWnWKeSZDImg]cKc0
+R7
+31
+Z13 Mx3 4 ieee 14 std_logic_1164
+Z14 Mx2 4 ieee 15 std_logic_arith
+Z15 Mx1 4 ieee 18 std_logic_unsigned
+R8
+R9

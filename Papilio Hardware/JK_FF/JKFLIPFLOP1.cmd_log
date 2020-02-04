@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/Xilinx/JK_FF/JKFLIPFLOP1.xst" -ofn "E:/Xilinx/JK_FF/JKFLIPFLOP1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-4 JKFLIPFLOP1.ngc JKFLIPFLOP1.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o JKFLIPFLOP1_map.ncd JKFLIPFLOP1.ngd JKFLIPFLOP1.pcf 
+par -w -intstyle ise -ol high -t 1 JKFLIPFLOP1_map.ncd JKFLIPFLOP1.ncd JKFLIPFLOP1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml JKFLIPFLOP1.twx JKFLIPFLOP1.ncd -o JKFLIPFLOP1.twr JKFLIPFLOP1.pcf 
+xst -intstyle ise -ifn "E:/Xilinx/JK_FF/JKFLIPFLOP1.xst" -ofn "E:/Xilinx/JK_FF/JKFLIPFLOP1.syr" 

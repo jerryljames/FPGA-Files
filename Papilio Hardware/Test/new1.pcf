@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.58f on Wed Aug 26 13:08:48 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+PROHIBIT = SITE "P99";
+PROHIBIT = SITE "P43";
+PROHIBIT = SITE "P42";
+PROHIBIT = SITE "P39";
+PROHIBIT = SITE "P49";
+PROHIBIT = SITE "P48";
+PROHIBIT = SITE "P47";
+COMP "a" LOCATE = SITE "P18" LEVEL 1;
+COMP "b" LOCATE = SITE "P23" LEVEL 1;
+SCHEMATIC END;
+

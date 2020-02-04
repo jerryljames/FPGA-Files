@@ -1,0 +1,1235 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml topmodule.twx topmodule.ncd -o topmodule.twr topmodule.pcf
+-ucf BPC3003-Papilio_One-general.ucf
+
+Design file:              topmodule.ncd
+Physical constraint file: topmodule.pcf
+Device,package,speed:     xc3s500e,vq100,-4 (PRODUCTION 1.27 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "name/CLKIN_IBUFG" PERIOD = 31.25 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is  10.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "name/CLKIN_IBUFG" PERIOD = 31.25 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 21.250ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 31.250ns
+  Low pulse: 15.625ns
+  Low pulse limit: 5.000ns (Tdcmpw_CLKIN_25_50)
+  Physical resource: name/DCM_SP_INST/CLKIN
+  Logical resource: name/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: name/CLKIN_IBUFG
+--------------------------------------------------------------------------------
+Slack: 21.250ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 31.250ns
+  High pulse: 15.625ns
+  High pulse limit: 5.000ns (Tdcmpw_CLKIN_25_50)
+  Physical resource: name/DCM_SP_INST/CLKIN
+  Logical resource: name/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: name/CLKIN_IBUFG
+--------------------------------------------------------------------------------
+Slack: 27.084ns (period - min period limit)
+  Period: 31.250ns
+  Min period limit: 4.166ns (240.038MHz) (Tdcmpc)
+  Physical resource: name/DCM_SP_INST/CLKIN
+  Logical resource: name/DCM_SP_INST/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: name/CLKIN_IBUFG
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "name/CLKFX_BUF" derived from  NET 
+"name/CLKIN_IBUFG" PERIOD = 31.25 ns HIGH 50%;  divided by 2.00 to 15.625 nS 
+and duty cycle corrected to HIGH 7.812 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 17953 paths analyzed, 112 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  10.783ns.
+--------------------------------------------------------------------------------
+
+Paths for end point c/y (SLICE_X1Y13.CE), 528 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.842ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_0 (FF)
+  Destination:          c/y (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.783ns (Levels of Logic = 21)
+  Clock Path Skew:      0.000ns
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_0 to c/y
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y13.XQ      Tcko                  0.591   c/i<0>
+                                                       c/i_0
+    SLICE_X25Y13.F4      net (fanout=2)        0.416   c/i<0>
+    SLICE_X25Y13.COUT    Topcyf                1.162   c/_old_i_4<0>
+                                                       c/Madd__old_i_4_lut<0>_INV_0
+                                                       c/Madd__old_i_4_cy<0>
+                                                       c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.COUT    Tbyp                  0.118   c/_old_i_4<2>
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X1Y13.CE       net (fanout=17)       2.576   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X1Y13.CLK      Tceck                 0.555   c/y
+                                                       c/y
+    -------------------------------------------------  ---------------------------
+    Total                                     10.783ns (6.749ns logic, 4.034ns route)
+                                                       (62.6% logic, 37.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.955ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_1 (FF)
+  Destination:          c/y (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.670ns (Levels of Logic = 21)
+  Clock Path Skew:      0.000ns
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_1 to c/y
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y13.YQ      Tcko                  0.587   c/i<0>
+                                                       c/i_1
+    SLICE_X25Y13.G2      net (fanout=2)        0.468   c/i<1>
+    SLICE_X25Y13.COUT    Topcyg                1.001   c/_old_i_4<0>
+                                                       c/i<1>_rt.1
+                                                       c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.COUT    Tbyp                  0.118   c/_old_i_4<2>
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X1Y13.CE       net (fanout=17)       2.576   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X1Y13.CLK      Tceck                 0.555   c/y
+                                                       c/y
+    -------------------------------------------------  ---------------------------
+    Total                                     10.670ns (6.584ns logic, 4.086ns route)
+                                                       (61.7% logic, 38.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.960ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_2 (FF)
+  Destination:          c/y (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.665ns (Levels of Logic = 20)
+  Clock Path Skew:      0.000ns
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_2 to c/y
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y14.XQ      Tcko                  0.591   c/i<2>
+                                                       c/i_2
+    SLICE_X25Y14.F4      net (fanout=2)        0.416   c/i<2>
+    SLICE_X25Y14.COUT    Topcyf                1.162   c/_old_i_4<2>
+                                                       c/i<2>_rt.1
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X1Y13.CE       net (fanout=17)       2.576   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X1Y13.CLK      Tceck                 0.555   c/y
+                                                       c/y
+    -------------------------------------------------  ---------------------------
+    Total                                     10.665ns (6.631ns logic, 4.034ns route)
+                                                       (62.2% logic, 37.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point c/i_2 (SLICE_X27Y14.SR), 528 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     5.179ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_0 (FF)
+  Destination:          c/i_2 (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.445ns (Levels of Logic = 21)
+  Clock Path Skew:      -0.001ns (0.032 - 0.033)
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_0 to c/i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y13.XQ      Tcko                  0.591   c/i<0>
+                                                       c/i_0
+    SLICE_X25Y13.F4      net (fanout=2)        0.416   c/i<0>
+    SLICE_X25Y13.COUT    Topcyf                1.162   c/_old_i_4<0>
+                                                       c/Madd__old_i_4_lut<0>_INV_0
+                                                       c/Madd__old_i_4_cy<0>
+                                                       c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.COUT    Tbyp                  0.118   c/_old_i_4<2>
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.SR      net (fanout=17)       1.883   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.CLK     Tsrck                 0.910   c/i<2>
+                                                       c/i_2
+    -------------------------------------------------  ---------------------------
+    Total                                     10.445ns (7.104ns logic, 3.341ns route)
+                                                       (68.0% logic, 32.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.292ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_1 (FF)
+  Destination:          c/i_2 (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.332ns (Levels of Logic = 21)
+  Clock Path Skew:      -0.001ns (0.032 - 0.033)
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_1 to c/i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y13.YQ      Tcko                  0.587   c/i<0>
+                                                       c/i_1
+    SLICE_X25Y13.G2      net (fanout=2)        0.468   c/i<1>
+    SLICE_X25Y13.COUT    Topcyg                1.001   c/_old_i_4<0>
+                                                       c/i<1>_rt.1
+                                                       c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.COUT    Tbyp                  0.118   c/_old_i_4<2>
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.SR      net (fanout=17)       1.883   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.CLK     Tsrck                 0.910   c/i<2>
+                                                       c/i_2
+    -------------------------------------------------  ---------------------------
+    Total                                     10.332ns (6.939ns logic, 3.393ns route)
+                                                       (67.2% logic, 32.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.298ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_2 (FF)
+  Destination:          c/i_2 (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.327ns (Levels of Logic = 20)
+  Clock Path Skew:      0.000ns
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_2 to c/i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y14.XQ      Tcko                  0.591   c/i<2>
+                                                       c/i_2
+    SLICE_X25Y14.F4      net (fanout=2)        0.416   c/i<2>
+    SLICE_X25Y14.COUT    Topcyf                1.162   c/_old_i_4<2>
+                                                       c/i<2>_rt.1
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.SR      net (fanout=17)       1.883   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.CLK     Tsrck                 0.910   c/i<2>
+                                                       c/i_2
+    -------------------------------------------------  ---------------------------
+    Total                                     10.327ns (6.986ns logic, 3.341ns route)
+                                                       (67.6% logic, 32.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point c/i_3 (SLICE_X27Y14.SR), 528 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     5.179ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_0 (FF)
+  Destination:          c/i_3 (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.445ns (Levels of Logic = 21)
+  Clock Path Skew:      -0.001ns (0.032 - 0.033)
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_0 to c/i_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y13.XQ      Tcko                  0.591   c/i<0>
+                                                       c/i_0
+    SLICE_X25Y13.F4      net (fanout=2)        0.416   c/i<0>
+    SLICE_X25Y13.COUT    Topcyf                1.162   c/_old_i_4<0>
+                                                       c/Madd__old_i_4_lut<0>_INV_0
+                                                       c/Madd__old_i_4_cy<0>
+                                                       c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.COUT    Tbyp                  0.118   c/_old_i_4<2>
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.SR      net (fanout=17)       1.883   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.CLK     Tsrck                 0.910   c/i<2>
+                                                       c/i_3
+    -------------------------------------------------  ---------------------------
+    Total                                     10.445ns (7.104ns logic, 3.341ns route)
+                                                       (68.0% logic, 32.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.292ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_1 (FF)
+  Destination:          c/i_3 (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.332ns (Levels of Logic = 21)
+  Clock Path Skew:      -0.001ns (0.032 - 0.033)
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_1 to c/i_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y13.YQ      Tcko                  0.587   c/i<0>
+                                                       c/i_1
+    SLICE_X25Y13.G2      net (fanout=2)        0.468   c/i<1>
+    SLICE_X25Y13.COUT    Topcyg                1.001   c/_old_i_4<0>
+                                                       c/i<1>_rt.1
+                                                       c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<1>
+    SLICE_X25Y14.COUT    Tbyp                  0.118   c/_old_i_4<2>
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.SR      net (fanout=17)       1.883   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.CLK     Tsrck                 0.910   c/i<2>
+                                                       c/i_3
+    -------------------------------------------------  ---------------------------
+    Total                                     10.332ns (6.939ns logic, 3.393ns route)
+                                                       (67.2% logic, 32.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.298ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c/i_2 (FF)
+  Destination:          c/i_3 (FF)
+  Requirement:          15.625ns
+  Data Path Delay:      10.327ns (Levels of Logic = 20)
+  Clock Path Skew:      0.000ns
+  Source Clock:         a rising at 0.000ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: c/i_2 to c/i_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y14.XQ      Tcko                  0.591   c/i<2>
+                                                       c/i_2
+    SLICE_X25Y14.F4      net (fanout=2)        0.416   c/i<2>
+    SLICE_X25Y14.COUT    Topcyf                1.162   c/_old_i_4<2>
+                                                       c/i<2>_rt.1
+                                                       c/Madd__old_i_4_cy<2>
+                                                       c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<3>
+    SLICE_X25Y15.COUT    Tbyp                  0.118   c/_old_i_4<4>
+                                                       c/Madd__old_i_4_cy<4>
+                                                       c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<5>
+    SLICE_X25Y16.COUT    Tbyp                  0.118   c/_old_i_4<6>
+                                                       c/Madd__old_i_4_cy<6>
+                                                       c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<7>
+    SLICE_X25Y17.COUT    Tbyp                  0.118   c/_old_i_4<8>
+                                                       c/Madd__old_i_4_cy<8>
+                                                       c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<9>
+    SLICE_X25Y18.COUT    Tbyp                  0.118   c/_old_i_4<10>
+                                                       c/Madd__old_i_4_cy<10>
+                                                       c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<11>
+    SLICE_X25Y19.COUT    Tbyp                  0.118   c/_old_i_4<12>
+                                                       c/Madd__old_i_4_cy<12>
+                                                       c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<13>
+    SLICE_X25Y20.COUT    Tbyp                  0.118   c/_old_i_4<14>
+                                                       c/Madd__old_i_4_cy<14>
+                                                       c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<15>
+    SLICE_X25Y21.COUT    Tbyp                  0.118   c/_old_i_4<16>
+                                                       c/Madd__old_i_4_cy<16>
+                                                       c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<17>
+    SLICE_X25Y22.COUT    Tbyp                  0.118   c/_old_i_4<18>
+                                                       c/Madd__old_i_4_cy<18>
+                                                       c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<19>
+    SLICE_X25Y23.COUT    Tbyp                  0.118   c/_old_i_4<20>
+                                                       c/Madd__old_i_4_cy<20>
+                                                       c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<21>
+    SLICE_X25Y24.COUT    Tbyp                  0.118   c/_old_i_4<22>
+                                                       c/Madd__old_i_4_cy<22>
+                                                       c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<23>
+    SLICE_X25Y25.COUT    Tbyp                  0.118   c/_old_i_4<24>
+                                                       c/Madd__old_i_4_cy<24>
+                                                       c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<25>
+    SLICE_X25Y26.COUT    Tbyp                  0.118   c/_old_i_4<26>
+                                                       c/Madd__old_i_4_cy<26>
+                                                       c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<27>
+    SLICE_X25Y27.COUT    Tbyp                  0.118   c/_old_i_4<28>
+                                                       c/Madd__old_i_4_cy<28>
+                                                       c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.CIN     net (fanout=1)        0.000   c/Madd__old_i_4_cy<29>
+    SLICE_X25Y28.Y       Tciny                 0.869   c/_old_i_4<30>
+                                                       c/Madd__old_i_4_cy<30>
+                                                       c/Madd__old_i_4_xor<31>
+    SLICE_X23Y18.F1      net (fanout=1)        1.042   c/_old_i_4<31>
+    SLICE_X23Y18.COUT    Topcyf                1.162   c/Mcompar_i_cmp_eq0000_cy<5>
+                                                       c/Mcompar_i_cmp_eq0000_lut<4>_INV_0
+                                                       c/Mcompar_i_cmp_eq0000_cy<4>
+                                                       c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<5>
+    SLICE_X23Y19.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<7>
+                                                       c/Mcompar_i_cmp_eq0000_cy<6>
+                                                       c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<7>
+    SLICE_X23Y20.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<9>
+                                                       c/Mcompar_i_cmp_eq0000_cy<8>
+                                                       c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<9>
+    SLICE_X23Y21.COUT    Tbyp                  0.118   c/Mcompar_i_cmp_eq0000_cy<11>
+                                                       c/Mcompar_i_cmp_eq0000_cy<10>
+                                                       c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.CIN     net (fanout=1)        0.000   c/Mcompar_i_cmp_eq0000_cy<11>
+    SLICE_X23Y22.XB      Tcinxb                0.404   c/Mrom_half_count7
+                                                       c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.SR      net (fanout=17)       1.883   c/Mcompar_i_cmp_eq0000_cy<12>
+    SLICE_X27Y14.CLK     Tsrck                 0.910   c/i<2>
+                                                       c/i_3
+    -------------------------------------------------  ---------------------------
+    Total                                     10.327ns (6.986ns logic, 3.341ns route)
+                                                       (67.6% logic, 32.4% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "name/CLKFX_BUF" derived from
+ NET "name/CLKIN_IBUFG" PERIOD = 31.25 ns HIGH 50%;
+ divided by 2.00 to 15.625 nS and duty cycle corrected to HIGH 7.812 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point c/y (SLICE_X1Y13.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.028ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               c/y (FF)
+  Destination:          c/y (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.028ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         a rising at 15.625ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: c/y to c/y
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y13.YQ       Tcko                  0.470   c/y
+                                                       c/y
+    SLICE_X1Y13.BY       net (fanout=2)        0.423   c/y
+    SLICE_X1Y13.CLK      Tckdi       (-Th)    -0.135   c/y
+                                                       c/y
+    -------------------------------------------------  ---------------------------
+    Total                                      1.028ns (0.605ns logic, 0.423ns route)
+                                                       (58.9% logic, 41.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point c/i_8 (SLICE_X27Y17.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.607ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               c/i_8 (FF)
+  Destination:          c/i_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.607ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         a rising at 15.625ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: c/i_8 to c/i_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y17.XQ      Tcko                  0.473   c/i<8>
+                                                       c/i_8
+    SLICE_X27Y17.F4      net (fanout=2)        0.333   c/i<8>
+    SLICE_X27Y17.CLK     Tckf        (-Th)    -0.801   c/i<8>
+                                                       c/i<8>_rt
+                                                       c/Mcount_i_xor<8>
+                                                       c/i_8
+    -------------------------------------------------  ---------------------------
+    Total                                      1.607ns (1.274ns logic, 0.333ns route)
+                                                       (79.3% logic, 20.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point c/i_12 (SLICE_X27Y19.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.607ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               c/i_12 (FF)
+  Destination:          c/i_12 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.607ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         a rising at 15.625ns
+  Destination Clock:    a rising at 15.625ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: c/i_12 to c/i_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y19.XQ      Tcko                  0.473   c/i<12>
+                                                       c/i_12
+    SLICE_X27Y19.F4      net (fanout=2)        0.333   c/i<12>
+    SLICE_X27Y19.CLK     Tckf        (-Th)    -0.801   c/i<12>
+                                                       c/i<12>_rt
+                                                       c/Mcount_i_xor<12>
+                                                       c/i_12
+    -------------------------------------------------  ---------------------------
+    Total                                      1.607ns (1.274ns logic, 0.333ns route)
+                                                       (79.3% logic, 20.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "name/CLKFX_BUF" derived from
+ NET "name/CLKIN_IBUFG" PERIOD = 31.25 ns HIGH 50%;
+ divided by 2.00 to 15.625 nS and duty cycle corrected to HIGH 7.812 nS 
+
+--------------------------------------------------------------------------------
+Slack: 12.558ns (period - min period limit)
+  Period: 15.625ns
+  Min period limit: 3.067ns (326.052MHz) (Tdcmpfx)
+  Physical resource: name/DCM_SP_INST/CLKFX
+  Logical resource: name/DCM_SP_INST/CLKFX
+  Location pin: DCM_X0Y1.CLKFX
+  Clock network: name/CLKFX_BUF
+--------------------------------------------------------------------------------
+Slack: 14.029ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 15.625ns
+  Low pulse: 7.812ns
+  Low pulse limit: 0.798ns (Tcl)
+  Physical resource: c/i<0>/CLK
+  Logical resource: c/i_0/CK
+  Location pin: SLICE_X27Y13.CLK
+  Clock network: a
+--------------------------------------------------------------------------------
+Slack: 14.029ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 15.625ns
+  High pulse: 7.812ns
+  High pulse limit: 0.798ns (Tch)
+  Physical resource: c/i<0>/CLK
+  Logical resource: c/i_0/CK
+  Location pin: SLICE_X27Y13.CLK
+  Clock network: a
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for name/CLKIN_IBUFG
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|name/CLKIN_IBUFG               |     31.250ns|     10.000ns|     21.566ns|            0|            0|            0|        17953|
+| name/CLKFX_BUF                |     15.625ns|     10.783ns|          N/A|            0|            0|        17953|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.783|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 17953 paths, 0 nets, and 171 connections
+
+Design statistics:
+   Minimum period:  10.783ns{1}   (Maximum frequency:  92.739MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Aug 26 19:06:15 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 189 MB
+
+
+

@@ -1,0 +1,9 @@
+NET "clk_in" LOC=P55;
+NET "sine[7]" LOC=P1;
+NET "sine[6]" LOC=P2;
+NET "sine[5]" LOC=P4;
+NET "sine[4]" LOC=P5;
+NET "sine[3]" LOC=P6;
+NET "sine[2]" LOC=P7;
+NET "sine[1]" LOC=P8;
+NET "sine[0]" LOC=P10;

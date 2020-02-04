@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Xilinx\vga_sync\vga_sync\top.ncd
+OUTFILE=E:\Xilinx\vga_sync\vga_sync\top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4vq100
+WORKINGDIR=E:\Xilinx\vga_sync\vga_sync
+LICENSE=WebPack
+USER_INFO=176271483_0_0_757

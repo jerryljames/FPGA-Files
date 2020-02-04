@@ -1,0 +1,7 @@
+V3 3
+FL E:/Xilinx/JKFF_WITH_RESET/JK.vhd 2013/07/11.23:58:09 O.61xd
+EN work/JKFF3 1373567293 FL E:/Xilinx/JKFF_WITH_RESET/JK.vhd \
+      PB ieee/std_logic_1164 1308643377 PB ieee/std_logic_arith 1308643378 \
+      PB ieee/STD_LOGIC_UNSIGNED 1308643379
+AR work/JKFF3/Behavioral 1373567294 \
+      FL E:/Xilinx/JKFF_WITH_RESET/JK.vhd EN work/JKFF3 1373567293

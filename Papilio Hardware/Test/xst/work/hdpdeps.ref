@@ -1,0 +1,5 @@
+V3 3
+FL E:/Xilinx/Test/new.vhd 2013/07/01.14:47:33 P.58f
+EN work/new1 1440574701 FL E:/Xilinx/Test/new.vhd PB ieee/std_logic_1164 1364358218
+AR work/new1/Behavioral 1440574702 \
+      FL E:/Xilinx/Test/new.vhd EN work/new1 1440574701

@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/lut.v"
+verilog work "clock.v"
+verilog work "sine_gen.v"
+verilog work "tb_sin.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

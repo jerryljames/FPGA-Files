@@ -1,0 +1,50 @@
+# Reading C:/modeltech_6.5b/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.5b May 21 2009 
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {example_FDCPE.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity example_fdcpe
+# -- Compiling architecture behavioral of example_fdcpe
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.example_FDCPE 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.example_fdcpe(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body
+force -freeze sim:/example_fdcpe/clr 1 0
+run
+run
+force -freeze sim:/example_fdcpe/clr 0 0
+force -freeze sim:/example_fdcpe/pre 1 0
+run
+force -freeze sim:/example_fdcpe/pre 0 0
+force -freeze sim:/example_fdcpe/d 0 0
+force -freeze sim:/example_fdcpe/ce 1 0
+force -freeze sim:/example_fdcpe/clk 1 0
+run
+force -freeze sim:/example_fdcpe/clk 0 0
+run
+run
+# Break key hit 
+# Break key hit 
+# Break key hit 
+force -freeze sim:/example_fdcpe/clk 1 0
+run
+# Break key hit 
+force -freeze sim:/example_fdcpe/clk 0 0
+run
+# Break in Process line__23 at main.vhd line 36
+run

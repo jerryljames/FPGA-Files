@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.58f on Wed Aug 26 17:39:11 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+PROHIBIT = SITE "P99";
+PROHIBIT = SITE "P43";
+PROHIBIT = SITE "P42";
+PROHIBIT = SITE "P39";
+PROHIBIT = SITE "P49";
+PROHIBIT = SITE "P48";
+PROHIBIT = SITE "P47";
+COMP "hout" LOCATE = SITE "P23" LEVEL 1;
+COMP "vout" LOCATE = SITE "P26" LEVEL 1;
+COMP "clkin" LOCATE = SITE "P89" LEVEL 1;
+NET "clk_name/CLKIN_IBUFG" PERIOD = 31.25 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,420 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: sine_gen.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sine_gen.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sine_gen"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : sine_gen
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/lut.v" in library work
+Compiling verilog file "clock.v" in library work
+Module <lut> compiled
+Compiling verilog file "sine_gen.v" in library work
+Module <clock> compiled
+Module <sine_gen> compiled
+No errors in compilation
+Analysis of file <"sine_gen.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <sine_gen> in library <work>.
+
+Analyzing hierarchy for module <clock> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <sine_gen>.
+WARNING:Xst:2211 - "ipcore_dir/lut.v" line 32: Instantiating black box module <lut>.
+Module <sine_gen> is correct for synthesis.
+ 
+Analyzing module <clock> in library <work>.
+Module <clock> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clock>.
+    Related source file is "clock.v".
+    Found 1-bit register for signal <clk_out>.
+    Found 14-bit up counter for signal <count>.
+    Found 14-bit adder for signal <old_count_1$add0000> created at line 35.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <clock> synthesized.
+
+
+Synthesizing Unit <sine_gen>.
+    Related source file is "sine_gen.v".
+    Found 8-bit register for signal <sine>.
+    Found 6-bit up counter for signal <address>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+Unit <sine_gen> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 14-bit adder                                          : 1
+# Counters                                             : 2
+ 14-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/lut.ngc>.
+Loading core <lut> for timing and area information for instance <name>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 14-bit adder                                          : 1
+# Counters                                             : 2
+ 14-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sine_gen> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sine_gen, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : sine_gen.ngr
+Top Level Output File Name         : sine_gen
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 99
+#      GND                         : 2
+#      INV                         : 3
+#      LUT1                        : 26
+#      LUT2                        : 2
+#      LUT2_L                      : 1
+#      LUT3                        : 4
+#      LUT3_L                      : 1
+#      LUT4                        : 4
+#      MUXCY                       : 26
+#      VCC                         : 2
+#      XORCY                       : 28
+# FlipFlops/Latches                : 29
+#      FD                          : 13
+#      FDE                         : 1
+#      FDR                         : 15
+# RAMS                             : 1
+#      RAMB16_S36_S36              : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                       30  out of   4656     0%  
+ Number of Slice Flip Flops:             29  out of   9312     0%  
+ Number of 4 input LUTs:                 41  out of   9312     0%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of     66    25%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                              | Load  |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------+-------+
+counter/clk_out                    | NONE(name/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram)| 15    |
+clk_in                             | BUFGP                                                                                                              | 15    |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.102ns (Maximum Frequency: 123.426MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.519ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'counter/clk_out'
+  Clock period: 3.716ns (frequency: 269.107MHz)
+  Total number of paths / destination ports: 41 / 26
+-------------------------------------------------------------------------
+Delay:               3.716ns (Levels of Logic = 2)
+  Source:            address_0 (FF)
+  Destination:       address_4 (FF)
+  Source Clock:      counter/clk_out rising
+  Destination Clock: counter/clk_out rising
+
+  Data Path: address_0 to address_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.591   0.883  address_0 (address_0)
+     LUT4:I0->O            2   0.704   0.526  Result<4>111 (Result<4>1_bdd0)
+     LUT2:I1->O            1   0.704   0.000  Result<4>12 (Result<4>1)
+     FD:D                      0.308          address_4
+    ----------------------------------------
+    Total                      3.716ns (2.307ns logic, 1.409ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_in'
+  Clock period: 8.102ns (frequency: 123.426MHz)
+  Total number of paths / destination ports: 1681 / 30
+-------------------------------------------------------------------------
+Delay:               8.102ns (Levels of Logic = 14)
+  Source:            counter/count_1 (FF)
+  Destination:       counter/count_0 (FF)
+  Source Clock:      clk_in rising
+  Destination Clock: clk_in rising
+
+  Data Path: counter/count_1 to counter/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  counter/count_1 (counter/count_1)
+     LUT1:I0->O            1   0.704   0.000  counter/Madd_old_count_1_add0000_cy<1>_rt (counter/Madd_old_count_1_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  counter/Madd_old_count_1_add0000_cy<1> (counter/Madd_old_count_1_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<2> (counter/Madd_old_count_1_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<3> (counter/Madd_old_count_1_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<4> (counter/Madd_old_count_1_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<5> (counter/Madd_old_count_1_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<6> (counter/Madd_old_count_1_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<7> (counter/Madd_old_count_1_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<8> (counter/Madd_old_count_1_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<9> (counter/Madd_old_count_1_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Madd_old_count_1_add0000_cy<10> (counter/Madd_old_count_1_add0000_cy<10>)
+     XORCY:CI->O           1   0.804   0.455  counter/Madd_old_count_1_add0000_xor<11> (counter/old_count_1_add0000<11>)
+     LUT3:I2->O            1   0.704   0.595  counter/clk_out_cmp_eq000014 (counter/clk_out_cmp_eq000014)
+     LUT4:I0->O           15   0.704   1.017  counter/clk_out_cmp_eq000064 (counter/clk_out_cmp_eq0000)
+     FDR:R                     0.911          counter/count_0
+    ----------------------------------------
+    Total                      8.102ns (5.413ns logic, 2.689ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'counter/clk_out'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              6.519ns (Levels of Logic = 2)
+  Source:            name/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
+  Destination:       lut_out<7> (PAD)
+  Source Clock:      counter/clk_out rising
+
+  Data Path: name/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to lut_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S36_S36:CLKB->DOB24    2   2.800   0.447  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<7>)
+     end scope: 'name'
+     OBUF:I->O                 3.272          lut_out_7_OBUF (lut_out<7>)
+    ----------------------------------------
+    Total                      6.519ns (6.072ns logic, 0.447ns route)
+                                       (93.1% logic, 6.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.25 secs
+ 
+--> 
+
+Total memory usage is 284476 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

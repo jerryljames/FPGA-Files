@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "E:/Xilinx/Test/new1.xst" -ofn "E:/Xilinx/Test/new1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BPC3003-Papilio_One-general.ucf -p xc3s500e-vq100-4 new1.ngc new1.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o new1_map.ncd new1.ngd new1.pcf 
+par -w -intstyle ise -ol high -t 1 new1_map.ncd new1.ncd new1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml new1.twx new1.ncd -o new1.twr new1.pcf -ucf BPC3003-Papilio_One-general.ucf 
+bitgen -intstyle ise -f new1.ut new1.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Test/new1.xst" -ofn "E:/Xilinx/Test/new1.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Test/new1.xst" -ofn "E:/Xilinx/Test/new1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BPC3003-Papilio_One-general.ucf -p xc3s500e-vq100-4 new1.ngc new1.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o new1_map.ncd new1.ngd new1.pcf 
+par -w -intstyle ise -ol high -t 1 new1_map.ncd new1.ncd new1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml new1.twx new1.ncd -o new1.twr new1.pcf -ucf BPC3003-Papilio_One-general.ucf 
+bitgen -intstyle ise -f new1.ut new1.ncd 
